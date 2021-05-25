@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Llenar el siguiente formulario</h1>
+    <form action=".form-result.php" method="POST" target="_self">
+        <ul>
+            <li>
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" name="nombre">
+            </li>
+            <li>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="introduce una clave">
+            </li>
+            <li>
+                <label for="select">Ocupación:</label>
+                <select name="ocupacion">
+                    <option value="estudiante">Estudiante</option>
+                    <option value="profesional">Profesional</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="text" name="otro" placeholder="especifique otro">
+            </li>
+            <li>
+                <label for="checkbox">Horario de contacto:</label>
+                <input type="checkbox" id="horario1" name="horario1" value="enLaMañana">
+                <label for="checkbox">En la mañana (8 a 12)</label>
+                <input type="checkbox" id="horario2" name="horario2" value="alMediodia">
+                <label for="checkbox">Al mediodía (12 a 13)</label>
+                <input type="checkbox" id="horario3" name="horario3" value="enLaTarde">
+                <label for="checkbox">En la tarde (13 a 17)</label>
+                <input type="checkbox" id="horario4" name="horario4" value="enLaNoche">
+                <label for="checkbox">En la noche (18 a 20)</label>
+            </li>
+            <li>
+                <textarea name="comentarios" rows="5" cols="60">Escribe aquí tus comentarios</textarea>
+            </li>
+            <li>
+                <label for="informacion">Deseo recibir a mi email mas informacion</label>
+                <input type="radio" id="si" name="informacion" value="si">
+                <label for="si">Si</label>
+                <input type="radio" id="no" name="informacion" value="no">
+                <label for="no">No</label>
+            </li>
+        </ul>
+        <input type="submit">
+    </form>
+</body>
+</html>
