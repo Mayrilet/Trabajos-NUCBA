@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(5, 151, 137);
+}
+
+body h2 {
+    color: white;
+    text-decoration: underline black;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+h1 {
+    font-size: xxx-large;
+    font-style: italic;
+}
+
+p {
+    font-size: larger;
+}
+
+.image img {
+    border: 8px solid oldlace;
+}
+
+.list li {
+    font-size: larger;
+    list-style: none;
+}
+
+.list2 li {
+    font-size: larger;
+}
