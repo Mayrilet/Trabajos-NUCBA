@@ -1,12 +1,40 @@
 body {
-    background-color: rgb(5, 151, 137);
+    background-color: #26e0ca;
 }
 
-body h2 {
-    color: white;
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main h2 {
+    color: oldlace;
     text-decoration: underline black;
     font-size: xx-large;
     font-style: italic;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+header .image {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.image {
+    width: 144px;
+    height: 190px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border: 8px solid oldlace;
 }
 
 h1 {
@@ -16,17 +44,18 @@ h1 {
 
 p {
     font-size: larger;
+    font-family: 'Playfair Display', serif;
 }
 
-.image img {
-    border: 8px solid oldlace;
-}
+
 
 .list li {
     font-size: larger;
     list-style: none;
+    font-family: 'Playfair Display', serif;
 }
 
 .list2 li {
     font-size: larger;
+    font-family: 'Playfair Display', serif;
 }
