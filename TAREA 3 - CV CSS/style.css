@@ -6,7 +6,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #26e0ca;
+    background-color: #ffeedd;
     font-family: 'Playfair Display', serif;
 }
 
@@ -26,7 +26,7 @@ li {
 h2 {
     font-size: 40px;
     text-decoration: underline black;
-    color: white;
+    color: #657b8b;
 }
 
 p {
@@ -35,14 +35,13 @@ p {
 }
 
 .image {
-    width: 186px;
-    height: 169px;
+    width: 263px;
+    height: 185px;
 }
 
 .image img {
     width: 100%;
     height: auto;
-    border: 8px solid white;
 }
 
 .list li {
