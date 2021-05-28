@@ -1,5 +1,13 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: #26e0ca;
+    font-family: 'Playfair Display', serif;
 }
 
 main {
@@ -7,55 +15,76 @@ main {
     height: 100%;
 }
 
-main h2 {
-    color: oldlace;
+h1 { 
+    font-size: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-size: 40px;
     text-decoration: underline black;
-    font-size: xx-large;
-    font-style: italic;
+    color: white;
 }
 
-header {
-    width: 100%;
-    height: 200px;
-    position: relative;
-}
-
-header .image {
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
+p {
+    padding: 10px;
+    margin-bottom: 3px;
 }
 
 .image {
-    width: 144px;
-    height: 190px;
+    width: 186px;
+    height: 169px;
 }
 
 .image img {
     width: 100%;
     height: auto;
-    border: 8px solid oldlace;
+    border: 8px solid white;
 }
-
-h1 {
-    font-size: xxx-large;
-    font-style: italic;
-}
-
-p {
-    font-size: larger;
-    font-family: 'Playfair Display', serif;
-}
-
-
 
 .list li {
-    font-size: larger;
-    list-style: none;
-    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    margin-bottom: 3px;
 }
 
-.list2 li {
-    font-size: larger;
-    font-family: 'Playfair Display', serif;
+/*header*/
+
+header {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+header h1 {
+    padding: 10px;
+}
+
+header h2 {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+header .image {
+    position: absolute;
+    right: 6%;
+    bottom: 36%;
+}
+
+/*section*/
+
+section {
+    border-top: 1px solid black;
+}
+
+section h2 {
+    padding: 10px;
+}
+
+/*footer*/
+
+footer h2 {
+    padding: 10px;
 }
