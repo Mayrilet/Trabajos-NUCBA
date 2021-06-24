@@ -24,10 +24,10 @@ header {
 
     div {
         margin-left: 28rem;
-    }
 
-    div:hover {
-        transform: translateX(500px);
+        &:hover {
+            transform: translateX(500px);
+        }
     }
 }
 
