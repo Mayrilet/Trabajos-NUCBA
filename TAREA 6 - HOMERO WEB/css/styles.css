@@ -12,18 +12,6 @@ body {
   background: #78bbcb;
 }
 
-.mouth {
-  animation: mouth 2s ease-in-out 1s infinite alternate;
-}
-
-.toaster {
-  animation: toaster 4s ease-in-out 1s infinite alternate;
-}
-
-.christ {
-  animation: christ 2s ease-in-out 1s infinite alternate;
-}
-
 header h1 {
   font-family: "simpsonfont";
   font-size: 4rem;
@@ -55,10 +43,10 @@ section div:first-child {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-section div:first-child .worm {
+section div:first-child div:nth-of-type(1) {
   align-self: flex-start;
 }
-section div:first-child .bell img {
+section div:first-child div:nth-of-type(3) {
   width: 60px;
 }
 section div:nth-child(2) {
@@ -66,9 +54,18 @@ section div:nth-child(2) {
   align-items: flex-end;
   margin-bottom: 2rem;
 }
-section div:nth-child(3) .christ {
+section div:nth-child(2) div:nth-of-type(1) {
+  animation: toaster 4s ease-in-out 1s infinite alternate;
+}
+section div:nth-child(2) div:nth-of-type(2) {
+  animation: mouth 2s ease-in-out 1s infinite alternate;
+}
+section div:nth-child(3) {
   justify-content: center;
   align-items: center;
+}
+section div:nth-child(3) div {
+  animation: christ 2s ease-in-out 1s infinite alternate;
 }
 section div:nth-child(4) {
   justify-content: space-between;
@@ -80,7 +77,13 @@ section div:last-child {
   justify-content: space-between;
   align-items: center;
 }
-section div:last-child :nth-child(3) {
+section div:last-child div:nth-of-type(1) {
+  animation: toaster 4s ease-in-out 1s infinite alternate;
+}
+section div:last-child div:nth-of-type(2) {
+  animation: mouth 2s ease-in-out 1s infinite alternate;
+}
+section div:last-child div:nth-child(3) {
   width: 50px;
 }
 
@@ -110,7 +113,10 @@ footer {
 }
 @keyframes mouth {
   from {
-    transform: rotate(280deg);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 @keyframes toaster {
