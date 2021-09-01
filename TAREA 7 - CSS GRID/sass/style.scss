@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin centerElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111010;
+    font-size: 2rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e7e7;
+    
+    main {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'header header header'
+        'section section section'
+        'footer footer footer';
+
+        @media(max-width:768px) {
+            grid-template-areas: 
+            'header'
+            'section'
+            'footer';
+        }
+
+        header {
+            background-color: #f06883;
+            border: black solid 1px;
+            height: 10rem;
+            grid-area: header;
+            @include centerElements;
+
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
+        section {
+            height: 35rem;
+            grid-area: section;
+            display: grid;
+            grid-template-areas: 'div1 div2 div2 div3'
+            'div1 div2 div2 div3'
+            'div1 div2 div2 div3';
+
+            @media(max-width:768px) {
+                grid-template-areas: 
+                'div1'
+                'div2'
+                'div3';
+            }
+            
+            div {
+                border: black solid 1px;
+                text-align: center;
+
+                &:nth-of-type(1) {
+                    grid-area: div1;
+                    @include centerElements
+                }
+
+                &:nth-of-type(2) {
+                    background-image: "../assest/img/EXs0zFuU_400x400.jpg";
+                    grid-area: div2;
+                    @include centerElements
+                }
+
+                &:nth-of-type(3) {
+                    grid-area: div3;
+                    @include centerElements
+                }
+            }
+        }
+
+        footer {
+            background-color: #f06883;
+            border: black solid 1px;
+            height: 10rem;
+            grid-area: footer;
+            @include centerElements
+        }
+
+    }
+}
